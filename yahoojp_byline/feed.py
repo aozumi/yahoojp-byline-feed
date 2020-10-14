@@ -22,7 +22,7 @@ def make_rss(feeddata: FeedData) -> str:
         feed.add_item(
             title=entry.title,
             link=entry.url,
-            description=entry.description,
+            description=entry.summary,
             author_name=author,
             pubdate=entry.pubdate)
 
