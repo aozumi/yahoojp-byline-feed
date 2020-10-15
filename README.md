@@ -8,13 +8,13 @@ Yahoo!個人ニュースの著者のキー(https://news.yahoo.co.jp/byline/foo/ 
 HTMLを取得、RSSを生成します。
 
 ```python
-from yahoojp_kojin import get_rss
+from yahoojp_byline import get_rss
 rss = get_rss('foo')
 ```
 
 HTMLの取得・解析・RSS生成を分けて行う場合:
 ```python
-from yahoojp_kojin import fetch, parse, make_rss
+from yahoojp_byline import fetch, parse, make_rss
 html = fetch('foo')
 data = parse(html)
 rss = make_rss(data)
