@@ -77,7 +77,6 @@ class SingleFileOutputHandler (OutputHandler):
                 reverse=True)
         )
         self.output(make_rss(data))
-        rss = make_rss(data)
 
 
 class SeparateFileOutputHandler (OutputHandler):
