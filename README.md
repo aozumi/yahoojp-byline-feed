@@ -29,3 +29,10 @@ rss = make_rss(data)
 ディレクトリ _DIR_ の下に _KEY_`.rss` として著者別にRSSファイルを生成します。
 
 `-w`オプションではHTTPリクエストの間隔(秒)を整数で指定できます。
+
+## パッケージのビルド
+```
+% pip install --upgrade setuptools
+% pip install build
+% python -m build --wheel --sdist .
+```
